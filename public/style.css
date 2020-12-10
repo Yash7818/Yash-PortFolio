@@ -40,9 +40,10 @@ a{
 .side{
     border: 2px solid #000;
     width: 26%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     background-color: #000;
+    /* visibility: hidden; */
 }
 .my-img img{
     max-width: 10em;
@@ -245,17 +246,22 @@ a{
     justify-content: space-around;
     
 }
-/* .fade{
-    animation: infinite linear 2s note;
-}
-@keyframes note{
-    from{
-        transform: translateX(0%);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-} */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: .8s;
+    animation-name: fade;
+    animation-duration: .8s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+  }
 .dot {
     cursor: pointer;
     height: 15px;
