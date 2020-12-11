@@ -477,5 +477,18 @@ li{
     100% {
       transform: translateX(0);
     }
-  }
+}
+.next-prev{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 4em;
+    /* border: red 2px solid; */
+    width: 17em;
+    top: 40.5em;
+}
+.prev,.next{
+    cursor: pointer;
+}
+
   
