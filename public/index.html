@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/90117eb688.js" crossorigin="anonymous"></script>
     <script src="./js/parallax.js"></script>
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <title>Yash Wandhare | PortFolio</title>
 </head>
+
 <script>
     var c=1;
     opennav=()=>{
-        document.querySelector('.side').style.visibility="visible";
+        document.querySelector('.side').style.left="0";
         document.querySelector('.menu-burger').style.visibility="hidden";
     }
     closenav=()=>{
-        document.querySelector('.side').style.visibility="hidden";
+        document.querySelector('.side').style.left="-150%";
         document.querySelector('.menu-burger').style.visibility="visible";
     }
 </script>
@@ -39,11 +41,11 @@
             <a href="mailto:yashwandhare1234@gmail.com"><div class="insta"><i class="far fa-envelope"></i></div></a>
         </div>
         <div id="links" class="links">
-            <div><a id="home-but" name="but" href="#" onclick="closenav()" >HOME</a></div>
-            <div><a id="about-but" href="#about" name="but" onclick="closenav()">ABOUT</a></div>
-            <div> <a id="proj-but" href="#projects" name="but" onclick="closenav()">PROJECTS</a></div>
-            <div> <a id="resu-but" href="#resume" name="but" onclick="closenav()">RESUME</a></div>
-            <div><a id="cont-but" href="#contact" name="but" onclick="closenav()">CONTACT</a></div>
+            <div><a id="home-but" name="but" href="#" >HOME</a></div>
+            <div><a id="about-but" href="#about" name="but" >ABOUT</a></div>
+            <div> <a id="proj-but" href="#projects" name="but">PROJECTS</a></div>
+            <div> <a id="resu-but" href="#resume" name="but" >RESUME</a></div>
+            <div><a id="cont-but" href="#contact" name="but" >CONTACT</a></div>
         </div>
         <div class="copyright">© Copyright |  <a href="#">Yash Wandhare</a> </div>
     </div>
@@ -147,7 +149,7 @@
         </div>
         <div class="about" id="about">
             <h1>About</h1>
-            <div class="about-text">
+            <div  data-aos="fade-up" class="about-text" >
                 <ul>
                     <li>
                         Hello, I'm yash wandhare. I'm an undergratuate student percieving my B.Tech from IIIT Surat in computer science.
@@ -164,7 +166,7 @@
                 </ul>
             </div>
             <div class="speci">
-                <div class="speci-s">
+                <div class="speci-s" data-aos="zoom-in-up">
                     <svg width="408" height="370" viewBox="0 0 408 430" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="408" height="430" fill="none"/>
                         <g id="undraw_enter_uhqk 1">
@@ -199,7 +201,7 @@
                         
                 </div>
                 <div class="speci-fo">
-                <div class="speci-i">
+                <div class="speci-i"  data-aos="fade-up">
                         <h2>
                         Web Development & Designing
                         </h2>
@@ -208,7 +210,7 @@
                             I've developed several application and projects in my stack and is always keen to learn new things into it.My learning is totally project based.
                         </div>
                 </div>
-                <div class="speci-i">
+                <div class="speci-i"  data-aos="fade-up" style="transition:1.4s;">
                     <h2>
                     Competitive Coding
                     </h2>
@@ -222,9 +224,9 @@
             <div class="hobbies">
                 <h1>Hobbies</h1>
                 <div class="hobb">
-                    <div><i class="fas fa-music"></i>Music</div>
-                    <div><i class="fas fa-laptop-code"></i>Coding</div>
-                    <div><i class="fas fa-camera-retro"></i>Photography</div>
+                    <div data-aos="fade-up"><i class="fas fa-music"></i>Music</div>
+                    <div data-aos="fade-up"><i class="fas fa-laptop-code"></i>Coding</div>
+                    <div data-aos="fade-up"><i class="fas fa-camera-retro"></i>Photography</div>
                 </div>
             </div>
            
@@ -232,26 +234,27 @@
          <div class="skills">
             <h1>Skills</h1>
             <div class="skill">
-                <div><i class="fab fa-html5"></i><div>HTML</div></div>
-                <div><i class="fab fa-css3-alt"></i> <div> CSS</div></div>
-                <div><i class="fab fa-node-js"></i> <div> Node js</div></div>
-                <div><i class="fab fa-react"></i> <div> React</div></div>
-                <div><i class="fab fa-git-alt"></i><div>Git</div></div>
-                <div><i class="fab fa-github"></i><div>GitHub</div></div>
-                <div><i class="fab fa-bootstrap"></i><div>Bootstrap</div></div>
-                <div><i class="fab fa-figma"></i><div>Figma</div> </div>
-                <div><i class="fab fa-linux"></i> <div>Linux</div> </div>
-                <div><i class="fab fa-npm"></i> <div>NPM</div> </div>
-                <div><i class="fas fa-code"></i> <div>C,C++</div> </div>
-                <div><i class="fab fa-python"></i> <div>Python</div> </div>
+                <div data-aos="fade-up"><i class="fab fa-html5"></i><div>HTML</div></div>
+                <div data-aos="fade-up"><i class="fab fa-css3-alt"></i> <div> CSS</div></div>
+                <div data-aos="fade-up"><i class="fab fa-node-js"></i> <div> Node js</div></div>
+                <div data-aos="fade-up"><i class="fab fa-react"></i> <div> React</div></div>
+                <div data-aos="fade-up"><i class="fab fa-git-alt"></i><div>Git</div></div>
+                <div data-aos="fade-up"><i class="fab fa-github"></i><div>GitHub</div></div>
+                <div data-aos="fade-up"><i class="fab fa-bootstrap"></i><div>Bootstrap</div></div>
+                <div data-aos="fade-up"><i class="fab fa-figma"></i><div>Figma</div> </div>
+                <div data-aos="fade-up"><i class="fab fa-linux"></i> <div>Linux</div> </div>
+                <div data-aos="fade-up"><i class="fab fa-npm"></i> <div>NPM</div> </div>
+                <div data-aos="fade-up"><i class="fas fa-code"></i> <div>C,C++</div> </div>
+                <div data-aos="fade-up"><i class="fab fa-python"></i> <div>Python</div> </div>
             </div>
         </div> 
         <div class="projects" id="projects">
             <h1>Projects</h1>
-            <div class="proj-spe">
-                <div class="myslide fade">
-                    <div class="proj1">
-                        <div class="proj-img">
+            <div class="proj-spe swiper-container">
+                <div class="swiper-wrapper">
+                <div class="myslide fade swiper-slide">
+                    <div class="proj1" data-aos="zoom-in">
+                        <div class="proj-img educato-i">
                             <img src="./images/loader.png" alt="Educato">
                         </div>
                         <div class="proj-data">
@@ -259,14 +262,14 @@
                             Educato is an educational site.Which provides an integrated platform for teaching and learning at the same-time.
                             It is developed by keeping in mind,the difficulties being faced during remote education.
                             <div>
-                                <a href="">Learn more...</a>
+                                <a href="https://github.com/Yash7818/Educato">Learn more...</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                           <div class="myslide fade">
-                            <div class="proj1">
-                                <div class="proj-img">
+                           <div class="myslide fade swiper-slide">
+                            <div class="proj1" data-aos="zoom-in">
+                                <div class="proj-img ecom-i">
                                     <img src="./images/E-COM.png" alt="Educato">
                                 </div>
                                 <div class="proj-data">
@@ -277,14 +280,14 @@
                                     It has various features including cart listing,effecient searching and most common search and customer intrest search algorithm.
                                     A geolocation feature is also added into it for detecting location of order and customer automatically.
                                     <div>
-                                        <a href="">Learn more...</a>
+                                        <a href="https://github.com/Yash7818/YashTraders">Learn more...</a>
                                     </div>
                                 </div>
                         </div>
                            </div> 
                             
-                      <div class="myslide fade">
-                        <div class="proj1">
+                      <div class="myslide fade swiper-slide">
+                        <div class="proj1" data-aos="zoom-in">
                             <div class="proj-img">
                                 <img src="./images/F-DET.png" alt="Educato">
                             </div>
@@ -296,13 +299,13 @@
                                 It took around a day to complete it.
                                 It has a very basic css no interactive styling is added.
                                 <div>
-                                    <a href="">Learn more...</a>
+                                    <a href="https://github.com/Yash7818/face-detect-web">Learn more...</a>
                                 </div>
                             </div>
                     </div>
                       </div>
-                            <div class="myslide fade">
-                                <div class=" proj1">
+                            <div class="myslide fade swiper-slide">
+                                <div class=" proj1" data-aos="zoom-in">
                                     <div class="proj-img">
                                         <img src="./images/ZOOM.png" alt="Educato">
                                     </div>
@@ -322,7 +325,7 @@
                           
                                 
                                 </div>
-                                <div class="next-prev">
+                                <!-- <div class="next-prev">
                                     <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
                                     <span class="next" onclick="plusSlides(1)">&#10095;</span>
                                 </div>
@@ -331,19 +334,19 @@
                                     <span class="dot" onclick="currentSlide(2)"></span> 
                                     <span class="dot" onclick="currentSlide(3)"></span> 
                                     <span class="dot" onclick="currentSlide(4)"></span> 
-                                </div>
+                                </div> -->
+                               
                         </div>
-                            
-                           
-                    
-
+                        <div class="swiper-pagination"></div>
+                    </div>  
         </div>
         <div class="resume-p" id="resume">
             <h1>Resume</h1>
             <div class="resume-w">
                 <div class="resume-t">
-                    <div class="resume-tf">
+                    <div class="resume-tf"  data-aos="fade-left">
                         <h2>Summary</h2>
+                        
                         <ul>
                         <h3>Yash A. Wandhare</h3>
                         <div>
@@ -356,8 +359,9 @@
                             yashwandhare1234@gmail.com
                         </div>
                         </ul>
+                    
                     </div>
-                    <div class="resume-ts">
+                    <div class="resume-ts" data-aos="fade-left">
                         <h2>
                             Education
                         </h2>
@@ -393,7 +397,7 @@
 
                     </div>
                 </div>
-                <div class="resume-l">
+                <div class="resume-l" data-aos="fade-left">
                     <h2>Work Experience</h2>
                     <ul>
                         <li>
@@ -427,7 +431,7 @@
         </div>
         <div class="contact-p" id="contact">
             <h1>Contact</h1>
-            <div class="contact-spec">
+            <div class="contact-spec" data-aos="zoom-in">
                 <div class="speci1_cont"> 
                     <div class="instagram"><i class="fab fa-instagram"></i><span>@yashanandwandhare</span></div>
                     <div class="mail"><i class="far fa-envelope"></i><span>yashwandhare1234@gmail.com</span></div>
@@ -443,7 +447,25 @@
         </div>  
     </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+    AOS.init({
+    duration: 1200
+    });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.proj-spe', {
+      pagination: {
+        el: '.swiper-pagination',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script>
+    <!-- <script>
         var slideIndex = 1;
         showSlides(slideIndex);
         
@@ -471,7 +493,7 @@
           dots[slideIndex-1].className += " active";
         //   setTimeout(showSlides(n++),3000);
         }
-        </script>
+        </script> -->
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/core.js"></script>

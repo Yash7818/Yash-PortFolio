@@ -141,7 +141,7 @@ a{
     color: #fff;
     text-align: center;
     position: fixed;
-    bottom: 1em;
+    bottom: .1em;
     left: 4em;
     text-decoration: none;
 }
@@ -496,7 +496,7 @@ li{
 
 @media(max-width:1441px){
     .side{
-        visibility: hidden;
+        /* visibility: hidden; */
     }
     .right-side{
         width:100%;
@@ -548,10 +548,12 @@ li{
         z-index: 100;
     }
     .side{
+        left:-150%;
+        /* visibility: hidden; */
         width: 90%;
         height:100%;
         z-index: 1;
-        /* transition: 1s; */
+        transition: .8s;
     }
     .layer{
         font-size: .5em;
@@ -616,6 +618,7 @@ li{
         width: 100%;
         padding: 0.3em;
     }
+    
     .proj1 .proj-data{
         text-align: center;
         width: 100%;
@@ -625,6 +628,12 @@ li{
      }
     .proj1 img{
         max-width:10em;
+    }
+    .ecom-i img{
+        max-width: 13em;
+    }
+    .educato-i img{
+        max-width: 16em;
     }
     .resume-p{
         padding-left: 2em;
@@ -690,6 +699,12 @@ li{
     }
     .links div a,.links div a:hover::after,.contact div,.links div a:hover{
         transition: none;
+    }
+    .proj-spe{
+        overflow-x: scroll;
+    }
+    .copyright{
+        visibility: hidden;
     }
 }
   
