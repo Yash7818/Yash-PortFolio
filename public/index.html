@@ -15,19 +15,26 @@
 
 <script>
     var c=1;
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
     opennav=()=>{
-        document.querySelector('.side').style.left="0";
-        document.querySelector('.menu-burger').style.visibility="hidden";
+        if(mediaQuery.matches){
+            document.querySelector('.side').style.left="0";
+            document.querySelector('.menu-burger').style.visibility="hidden";
+        }
+       
     }
     closenav=()=>{
-        document.querySelector('.side').style.left="-150%";
-        document.querySelector('.menu-burger').style.visibility="visible";
+        if(mediaQuery.matches){
+            document.querySelector('.side').style.left="-150%";
+            document.querySelector('.menu-burger').style.visibility="visible";
+        }
+      
     }
 </script>
 <body >
     <div class="main">
        
-    <div class="side">
+    <div class="side" id="side_menu">
         <div class="close" onclick="closenav()">&#10006;</div>
         <div class="my-img">
             <img src="./images/prof.jpg" alt="my-img">
@@ -41,11 +48,11 @@
             <a href="mailto:yashwandhare1234@gmail.com"><div class="insta"><i class="far fa-envelope"></i></div></a>
         </div>
         <div id="links" class="links">
-            <div><a id="home-but" name="but" href="#" >HOME</a></div>
-            <div><a id="about-but" href="#about" name="but" >ABOUT</a></div>
-            <div> <a id="proj-but" href="#projects" name="but">PROJECTS</a></div>
-            <div> <a id="resu-but" href="#resume" name="but" >RESUME</a></div>
-            <div><a id="cont-but" href="#contact" name="but" >CONTACT</a></div>
+            <div><a id="home-but" name="but" href="#" onclick="closenav()">HOME</a></div>
+            <div><a id="about-but" href="#about" name="but" onclick="closenav()">ABOUT</a></div>
+            <div> <a id="proj-but" href="#projects" name="but" onclick="closenav()">PROJECTS</a></div>
+            <div> <a id="resu-but" href="#resume" name="but" onclick="closenav()">RESUME</a></div>
+            <div><a id="cont-but" href="#contact" name="but" onclick="closenav()">CONTACT</a></div>
         </div>
         <div class="copyright">© Copyright |  <a href="#">Yash Wandhare</a> </div>
     </div>

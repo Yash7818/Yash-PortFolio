@@ -315,13 +315,7 @@ a{
    font-size:1.15em;
    margin-bottom: 3em;
 }
-.proj1:hover{
-    /* height: fit-content; */
-    /* transition-delay: 1s; */
-}
-.proj1:hover .proj-data{
-    /* visibility: visible; */
-}
+
 .proj-img{
     align-items: center;
     text-align: center;
@@ -495,9 +489,6 @@ li{
 }
 
 @media(max-width:1441px){
-    .side{
-        /* visibility: hidden; */
-    }
     .right-side{
         width:100%;
         margin-left:0;
@@ -534,6 +525,9 @@ li{
     }
     body{
         overflow-x: hidden;
+    }
+    #side_menu:hover{
+        js:click();
     }
     .home-svg{
         display: none;
