@@ -332,10 +332,8 @@
                           
                                 
                                 </div>
-                                <!-- <div class="next-prev">
-                                    <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
-                                    <span class="next" onclick="plusSlides(1)">&#10095;</span>
-                                </div>
+                                
+                                <!--
                                 <div style="text-align:center">
                                     <span class="dot" onclick="currentSlide(1)"></span> 
                                     <span class="dot" onclick="currentSlide(2)"></span> 
@@ -343,6 +341,14 @@
                                     <span class="dot" onclick="currentSlide(4)"></span> 
                                 </div> -->
                                
+                        </div>
+                        <!-- <div class="nav-arrow">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div> -->
+                        <div class="next-prev" data-aos="zoom-in">
+                            <span class="prev">&#10094;</span>
+                            <span class="next">&#10095;</span>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>  
@@ -467,8 +473,10 @@
 		var swiper = new Swiper('.proj-spe', {
       pagination: {
         el: '.swiper-pagination',
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      },
+      navigation: {
+        nextEl: '.next',
+        prevEl: '.prev',
       },
     });
 	</script>

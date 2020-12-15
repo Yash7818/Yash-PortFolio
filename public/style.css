@@ -251,6 +251,9 @@ a{
     justify-content: space-around;
     
 }
+
+
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: .8s;
@@ -480,9 +483,13 @@ li{
     display: flex;
     justify-content: space-between;
     font-size: 4em;
+    font-weight: 100;
     /* border: red 2px solid; */
-    width: 17em;
-    top: 40.5em;
+        width: 15em;
+        top: 3.5em;
+        left: 0.5em;
+        color: #1b7ef0da;
+        z-index: 200;
 }
 .prev,.next{
     cursor: pointer;
