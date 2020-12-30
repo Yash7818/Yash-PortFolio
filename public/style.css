@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    /* box-sizing: border-box; */
     -webkit-tap-highlight-color: transparent;
 }
 html{
@@ -532,14 +533,20 @@ li{
     }
 }
 @media(max-width:1025px){
+    /* html{
+        overflow-x: hidden;
+    } */
     body{
         overflow-x: hidden;
     }
-    #scene{
+    .main{
+        width:100vw;
+    }
+   .container{
         visibility: hidden;
     }
-    .resume-p{
-        height: 100vh;
+    .resume-w{
+        height:fit-content;
     }
     .intro-f{
         display: flex;
@@ -577,6 +584,14 @@ li{
         font-size:1.15em;
         margin-bottom: 3em;
      }
+     .next-prev{
+        top: 3.8em;
+        left: 0.3em;
+        width: 9.4em;
+        /* border: red solid 2px; */
+        visibility: visible;
+        z-index:100;
+    }
      .resume-a{
          padding-left:5em;
      }
@@ -694,6 +709,7 @@ li{
     .proj1{
         width:17em;
         height: fit-content;
+        height: auto;
         display: inline-block;
         margin:0;
     }
